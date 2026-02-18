@@ -18,58 +18,90 @@
                 <span class="heading-font text-4xl text-amber-900">BubbleBee</span>
             </a>
             <div class="hidden md:flex gap-8 text-sm font-medium">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="stanze.html" class="nav-link">Le Stanze</a>
-                <a href="esperienze.html" class="nav-link">Esperienze</a>
-                <a href="territorio.html" class="nav-link">Il Territorio</a>
-                <a href="galleria.html" class="nav-link">Galleria</a>
-                <a href="contatti.html" class="nav-link">Contatti</a>
+                <a href="#stanze" class="nav-link">Camere &amp; Bubble</a>
+                <a href="#esperienze" class="nav-link">Esperienze</a>
+                <a href="#territorio" class="nav-link">Territorio</a>
+                <a href="#galleria" class="nav-link">Galleria</a>
+                <a href="#contatti" class="nav-link">Contatti</a>
             </div>
-            <a href="contatti.html" class="px-8 py-3 bg-amber-800 hover:bg-amber-900 text-white rounded-full text-sm font-semibold transition">PRENOTA ORA</a>
+            <a href="#contatti" class="px-8 py-3 bg-amber-800 hover:bg-amber-900 text-white rounded-full text-sm font-semibold transition">PRENOTA ORA</a>
         </div>
     </nav>
 
     <!-- HERO -->
     <section class="hero-bg h-screen flex items-center text-white">
         <div class="max-w-5xl mx-auto px-6 text-center">
-            <p class="uppercase tracking-[4px] text-amber-200 text-sm mb-4">Via Castellata 6 • Sant’Eusanio del Sangro (Abruzzo)</p>
+            <p class="uppercase tracking-[4px] text-amber-200 text-sm mb-4">Via Castellata 6 • Sant’Eusanio del Sangro (CH)</p>
             <h1 class="heading-font text-7xl md:text-8xl leading-none font-light">Lusso che accarezza l’anima</h1>
-            <p class="text-2xl mt-6 max-w-2xl mx-auto">4 camere luxury B&amp;B + 2 esclusive Bubble Room immerse nella natura incontaminata</p>
+            <p class="text-2xl mt-6">4 camere luxury + 2 Bubble Room esclusive immerse nella natura abruzzese</p>
             <div class="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
-                <a href="stanze.html" class="px-12 py-6 bg-white text-amber-900 rounded-3xl text-xl font-semibold hover:bg-amber-100 transition">Scopri le Stanze</a>
-                <a href="contatti.html" class="px-12 py-6 border-2 border-white hover:bg-white/10 rounded-3xl text-xl font-semibold transition">Prenota la tua esperienza</a>
+                <a href="#stanze" class="px-12 py-6 bg-white text-amber-900 rounded-3xl text-xl font-semibold hover:bg-amber-100 transition">Scopri le Stanze</a>
+                <a href="#contatti" class="px-12 py-6 border-2 border-white hover:bg-white/10 rounded-3xl text-xl font-semibold transition">Prenota Ora</a>
             </div>
         </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-6 py-2 rounded-full text-sm mb-8">
-                <i class="fas fa-sparkles"></i>
-                <span>Esperienza 5 stelle in un borgo autentico</span>
+    <!-- STANZE + BUBBLE -->
+    <section id="stanze" class="py-24 bg-zinc-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading-font text-6xl text-center mb-16">Camere &amp; Bubble Room</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 6 card (le prime 4 luxury + 2 bubble) -->
+                <div onclick="showRoomModal(0)" class="room-card bg-white rounded-3xl overflow-hidden cursor-pointer"> ... </div>
+                <!-- ripeti per index 1-5 con onclick="showRoomModal(1)" ecc. -->
+                <!-- (usa le stesse card del messaggio precedente) -->
             </div>
-            <h2 class="heading-font text-6xl leading-tight text-gray-900">Benvenuti a BubbleBee</h2>
-            <p class="text-xl text-gray-600 mt-8 max-w-2xl mx-auto">
-                Un rifugio esclusivo dove design contemporaneo incontra la tradizione abruzzese. 
-                Quattro camere luxury all’interno di una villa restaurata e due Bubble Room trasparenti 
-                per dormire sotto le stelle più luminose d’Italia.
-            </p>
+        </div>
+    </section>
+
+    <!-- ESPERIENZE -->
+    <section id="esperienze" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading-font text-6xl text-center mb-16">Esperienze &amp; Eventi</h2>
+            <!-- copia qui la sezione Esperienze dal primo messaggio -->
+        </div>
+    </section>
+
+    <!-- TERRITORIO -->
+    <section id="territorio" class="py-24 bg-zinc-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading-font text-6xl text-center mb-16">Il Territorio</h2>
+            <!-- copia qui la sezione Territorio -->
+        </div>
+    </section>
+
+    <!-- GALLERIA -->
+    <section id="galleria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading-font text-6xl text-center mb-16">Galleria</h2>
+            <!-- griglia foto -->
+        </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contatti" class="py-24 bg-amber-900 text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="heading-font text-6xl text-center mb-12">Contatti &amp; Prenotazioni</h2>
+            <!-- form prenotazione -->
+            <form onsubmit="handleBooking(event)" class="..."> ... </form>
+            <!-- mappa Google -->
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="bg-zinc-950 text-white/70 py-16">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="flex justify-center gap-3 mb-6">
-                <div class="w-8 h-8 bg-amber-800 rounded-full flex items-center justify-center text-xl">🐝</div>
-                <span class="heading-font text-3xl">BubbleBee</span>
-            </div>
-            <p class="text-lg">Via Castellata 6, 66030 Sant’Eusanio del Sangro (CH)</p>
-            <p class="mt-2">+39 347 123 4567 • info@bubblebee.it</p>
-            <p class="text-xs mt-12">© 2026 BubbleBee Luxury Retreat • Tutti i diritti riservati</p>
+            Via Castellata 6, 66030 Sant’Eusanio del Sangro (CH) • +39 347 123 4567 • info@bubblebee.it
         </div>
     </footer>
+
+    <!-- MODAL (necessario per le stanze) -->
+    <div id="room-modal" class="hidden fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-4xl rounded-3xl overflow-hidden">
+            <div id="modal-image" class="h-96 bg-cover bg-center"></div>
+            <div class="p-10" id="modal-content"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
