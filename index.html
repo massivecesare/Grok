@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BubbleBee | Luxury B&amp;B Sant’Eusanio del Sangro</title>
+    <title>BubbleBee | Luxury B&amp;B &amp; Bubble Rooms Sant’Eusanio del Sangro</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body class="tail-container">
-    <!-- Navbar -->
+
+    <!-- NAVBAR -->
     <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -24,16 +25,49 @@
                 <a href="galleria.html" class="nav-link">Galleria</a>
                 <a href="contatti.html" class="nav-link">Contatti</a>
             </div>
-            <a href="contatti.html" class="px-8 py-3 bg-amber-800 text-white rounded-full text-sm font-semibold">PRENOTA ORA</a>
+            <a href="contatti.html" class="px-8 py-3 bg-amber-800 hover:bg-amber-900 text-white rounded-full text-sm font-semibold transition">PRENOTA ORA</a>
         </div>
     </nav>
 
-    <!-- Hero + resto della home (stesso contenuto del messaggio precedente) -->
-    <!-- ... (copia il contenuto hero e intro dal primo messaggio se vuoi, oppure dimmi e te lo mando espanso) ... -->
+    <!-- HERO -->
+    <section class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="uppercase tracking-[4px] text-amber-200 text-sm mb-4">Via Castellata 6 • Sant’Eusanio del Sangro (Abruzzo)</p>
+            <h1 class="heading-font text-7xl md:text-8xl leading-none font-light">Lusso che accarezza l’anima</h1>
+            <p class="text-2xl mt-6 max-w-2xl mx-auto">4 camere luxury B&amp;B + 2 esclusive Bubble Room immerse nella natura incontaminata</p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="stanze.html" class="px-12 py-6 bg-white text-amber-900 rounded-3xl text-xl font-semibold hover:bg-amber-100 transition">Scopri le Stanze</a>
+                <a href="contatti.html" class="px-12 py-6 border-2 border-white hover:bg-white/10 rounded-3xl text-xl font-semibold transition">Prenota la tua esperienza</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- INTRO -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-6 py-2 rounded-full text-sm mb-8">
+                <i class="fas fa-sparkles"></i>
+                <span>Esperienza 5 stelle in un borgo autentico</span>
+            </div>
+            <h2 class="heading-font text-6xl leading-tight text-gray-900">Benvenuti a BubbleBee</h2>
+            <p class="text-xl text-gray-600 mt-8 max-w-2xl mx-auto">
+                Un rifugio esclusivo dove design contemporaneo incontra la tradizione abruzzese. 
+                Quattro camere luxury all’interno di una villa restaurata e due Bubble Room trasparenti 
+                per dormire sotto le stelle più luminose d’Italia.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="bg-zinc-950 text-white/70 py-16">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            Via Castellata 6, 66030 Sant’Eusanio del Sangro (CH) • +39 347 123 4567 • info@bubblebee.it
+            <div class="flex justify-center gap-3 mb-6">
+                <div class="w-8 h-8 bg-amber-800 rounded-full flex items-center justify-center text-xl">🐝</div>
+                <span class="heading-font text-3xl">BubbleBee</span>
+            </div>
+            <p class="text-lg">Via Castellata 6, 66030 Sant’Eusanio del Sangro (CH)</p>
+            <p class="mt-2">+39 347 123 4567 • info@bubblebee.it</p>
+            <p class="text-xs mt-12">© 2026 BubbleBee Luxury Retreat • Tutti i diritti riservati</p>
         </div>
     </footer>
 
